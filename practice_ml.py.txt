@@ -1,0 +1,145 @@
+Jupyter Notebook
+ML_Practice
+Last Checkpoint: 01/26/2019
+(autosaved)
+Current Kernel Logo
+Python 3 
+File
+Edit
+View
+Insert
+Cell
+Kernel
+Widgets
+Help
+
+
+import numpy as np
+import numpy as np
+
+import pandas as pd
+
+import sklearn as sk
+
+import matplotlib as plot
+
+import seaborn
+
+#help("pip")
+
+print(np.linspace(1,600,5,dtype=np.float64))
+[  1.   150.75 300.5  450.25 600.  ]
+
+print(np.array([1,2,3,4,5,6]).reshape(2,3))
+[[1 2 3]
+ [4 5 6]]
+
+print(np.matrix([[1,2],[2,3]],dtype=int))
+[[1 2]
+ [2 3]]
+
+print(np.eye(3))
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+
+print(np.zeros((3,3),dtype=np.float64))
+[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+
+arr1 = [25, 56, 12, 85, 34, 75]
+arr2 = [42, 3, 86, 32, 856, 46]
+arr1_np=np.array(arr1)
+arr2_np=np.array(arr2)
+size_arr1_np=np.size(arr1)
+print(size_arr1_np)
+print(np.random.rand(size_arr1))
+6
+[0.47698248 0.80688404 0.589267   0.0396659  0.12114369 0.99168615]
+
+print(arr1_np.astype(np.float64))
+[25. 56. 12. 85. 34. 75.]
+
+mat1=np.reshape(arr1_np,(2,3))
+mat2=np.reshape(arr2_np,(2,3))
+print(mat1)
+print(mat2)
+[[25 56 12]
+ [85 34 75]]
+[[ 42   3  86]
+ [ 32 856  46]]
+
+!cd
+!cd
+C:\Users\ROHIT
+
+s
+import os
+
+os.getcwd()
+'C:\\Users\\ROHIT'
+
+%lsmagic
+%lsmagic
+Available line magics:
+%alias  %alias_magic  %autoawait  %autocall  %automagic  %autosave  %bookmark  %cd  %clear  %cls  %colors  %config  %connect_info  %copy  %ddir  %debug  %dhist  %dirs  %doctest_mode  %echo  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %macro  %magic  %matplotlib  %mkdir  %more  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %ren  %rep  %rerun  %reset  %reset_selective  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%cmd  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%markdown  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.
+
+_dir
+!mkdir test_dir
+
+%ls
+ Volume in drive C is WINDOWS 7
+ Volume Serial Number is C043-0B6E
+
+ Directory of C:\Users\ROHIT
+
+26/01/2019  11:15 PM    <DIR>          .
+26/01/2019  11:15 PM    <DIR>          ..
+31/05/2017  12:27 AM    <DIR>          .android
+26/01/2019  04:36 PM    <DIR>          .idlerc
+26/01/2019  04:47 PM    <DIR>          .ipynb_checkpoints
+26/01/2019  03:41 PM    <DIR>          .ipython
+26/01/2019  04:50 PM    <DIR>          .jupyter
+26/01/2019  03:57 PM    <DIR>          .matplotlib
+28/10/2015  11:44 PM    <DIR>          .oracle_jre_usage
+07/12/2018  01:36 AM    <DIR>          .PyCharmCE2018.3
+10/05/2017  03:29 PM    <DIR>          .RapidMiner5
+10/12/2018  11:58 AM    <DIR>          .VirtualBox
+07/12/2018  11:15 PM    <DIR>          Contacts
+13/12/2018  10:44 PM    <DIR>          Desktop
+07/12/2018  11:15 PM    <DIR>          Documents
+19/12/2018  03:29 PM    <DIR>          Downloads
+28/11/2016  07:50 PM    <DIR>          Dropbox
+07/12/2018  11:15 PM    <DIR>          Favorites
+10/10/2015  06:33 PM    <DIR>          Links
+11/08/2018  03:07 PM    <DIR>          Meena's document
+26/01/2019  11:15 PM            10,322 ML_Practice.ipynb
+07/12/2018  11:15 PM    <DIR>          Music
+19/09/2011  08:25 PM            49,152 NPProt.bkp
+19/09/2011  08:25 PM            49,152 NPProt.exe
+07/12/2018  11:15 PM    <DIR>          Pictures
+07/12/2018  02:01 AM    <DIR>          PycharmProjects
+07/12/2018  11:15 PM    <DIR>          Saved Games
+07/12/2018  11:15 PM    <DIR>          Searches
+26/01/2019  11:15 PM    <DIR>          test_dir
+07/12/2018  11:15 PM    <DIR>          Videos
+08/12/2018  06:12 PM    <DIR>          VirtualBox VMs
+               3 File(s)        108,626 bytes
+              28 Dir(s)   8,133,238,784 bytes free
+
+/head>
+%%HTML
+<head> first time html </head>
+first time html
+
+?
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+?
